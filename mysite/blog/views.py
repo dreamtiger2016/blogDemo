@@ -32,7 +32,7 @@ def regist(req):
             user = User.objects.filter(username__exact = username,password__exact = password)
             if user:
                 response = HttpResponseRedirect('/blog/index/')
-                response.set_cookie('username',username,3600)
+                req.session['username'] = username
                 return response
             else:
                 return HttpResponseRedirect('/blog/login/')
@@ -51,7 +51,7 @@ def login(req):
             user = User.objects.filter(username__exact = username,password__exact = password)
             if user:
                 response = HttpResponseRedirect('/blog/index/')
-                response.set_cookie('username',username,3600)
+                req.session['username'] = username
                 return response
             else:
                 return HttpResponseRedirect('/blog/login/')
