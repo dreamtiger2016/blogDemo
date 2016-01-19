@@ -8,8 +8,14 @@
  
   <body>
     <h1>TiGer's blog</h1>
-      <a href="/blog/regist/"><font color="#FF0000">注册</font></a>
-      <a href="/blog/login/"><font color="#FF0000">登录</font></a>
+    {% if username != null %}
+      <p><font color="#FF7F00">welcome {{username}} !</font>
+        <a href="/blog/"><font color="#FF7F00">退出</font></a> </p>
+    {% else %}
+        <a href="/blog/regist/"><font color="#FF0000">注册</font></a>
+        <a href="/blog/login/"><font color="#FF0000">登录</font></a>
+    {% endif %}
+    
     {% block content %}
     {% endblock %}
 
