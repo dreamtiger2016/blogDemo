@@ -15,8 +15,8 @@ def archive(req):
 
 
 class UserForm(forms.Form): 
-    username = forms.CharField(label='用户名',max_length=100)
-    password = forms.CharField(label='密码',widget=forms.PasswordInput())
+    username = forms.CharField(label='用户名', max_length=100)
+    password = forms.CharField(label='密码', widget=forms.PasswordInput())
 
 
 def regist(req):
@@ -27,9 +27,9 @@ def regist(req):
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
             #添加用户到数据库中
-            User.objects.create(username= username,password=password)
+            User.objects.create(username=username, password=password)
             #跳转到主页
-            user = User.objects.filter(username__exact = username,password__exact = password)
+            user = User.objects.filter(username__exact=username, password__exact=password)
             if user:
                 response = HttpResponseRedirect('/blog/index/')
                 req.session['username'] = username
@@ -64,4 +64,4 @@ def login(req):
 def index(req):
     username = req.session.get('username','')
     posts = BlogPost.objects.all()
-    return  render_to_response('index.html',{'username':username,'posts':posts})
+    return  render_to_response('index.html', {'username':username, 'posts':posts})
