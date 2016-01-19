@@ -48,7 +48,7 @@ def login(req):
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
             #跳转到主页
-            user = User.objects.filter(username__exact = username,password__exact = password)
+            user = User.objects.filter(username__exact = username, password__exact = password)
             if user:
                 response = HttpResponseRedirect('/blog/index/')
                 req.session['username'] = username
@@ -57,7 +57,7 @@ def login(req):
                 return HttpResponseRedirect('/blog/login/')
     else:
         uf = UserForm()
-    return render_to_response('login.html',{'uf':uf},context_instance=RequestContext(req))
+    return render_to_response('login.html', {'uf':uf}, context_instance=RequestContext(req))
 
 
 #登录、注册后跳转到主页
