@@ -13,12 +13,6 @@ def archive(req):
     c = Context({'posts':posts})
     return HttpResponse(t.render(c))
 
-def archive2(req):
-    posts = BlogPost.objects.all()
-    t = loader.get_template("index.html")
-    c = Context({'posts':posts})
-    return HttpResponse(t.render(c))
-
 
 class UserForm(forms.Form): 
     username = forms.CharField(label='用户名',max_length=100)
