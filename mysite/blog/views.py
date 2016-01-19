@@ -62,6 +62,6 @@ def login(req):
 
 #登录、注册后跳转到主页
 def index(req):
-    username = req.COOKIES.get('username','')
+    username = req.session.get('username','')
     posts = BlogPost.objects.all()
     return  render_to_response('index.html',{'username':username,'posts':posts})
