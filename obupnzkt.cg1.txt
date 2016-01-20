@@ -1,0 +1,69 @@
+﻿Revert "blogDemo20160119"
+
+This reverts commit 2a6bb6973edae0d4b9dc9723ea59693ea780ca26.
+
+# Conflicts:
+#	mysite/blog/templates/base.html
+#	mysite/blog/templates/index.html
+#	mysite/blog/templates/login.html
+#	mysite/blog/templates/regist.html
+#	mysite/blog/views.py
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# You are currently reverting commit 2a6bb69.
+#
+# Changes to be committed:
+#	new file:   blogDemo0120/blogdb/auth_group.frm
+#	new file:   blogDemo0120/blogdb/auth_group.ibd
+#	new file:   blogDemo0120/blogdb/auth_group_permissions.frm
+#	new file:   blogDemo0120/blogdb/auth_group_permissions.ibd
+#	new file:   blogDemo0120/blogdb/auth_permission.frm
+#	new file:   blogDemo0120/blogdb/auth_permission.ibd
+#	new file:   blogDemo0120/blogdb/auth_user.frm
+#	new file:   blogDemo0120/blogdb/auth_user.ibd
+#	new file:   blogDemo0120/blogdb/auth_user_groups.frm
+#	new file:   blogDemo0120/blogdb/auth_user_groups.ibd
+#	new file:   blogDemo0120/blogdb/auth_user_user_permissions.frm
+#	new file:   blogDemo0120/blogdb/auth_user_user_permissions.ibd
+#	new file:   blogDemo0120/blogdb/blog_blogpost.frm
+#	new file:   blogDemo0120/blogdb/blog_blogpost.ibd
+#	new file:   blogDemo0120/blogdb/blog_user.frm
+#	new file:   blogDemo0120/blogdb/blog_user.ibd
+#	new file:   blogDemo0120/blogdb/db.opt
+#	new file:   blogDemo0120/blogdb/django_admin_log.frm
+#	new file:   blogDemo0120/blogdb/django_admin_log.ibd
+#	new file:   blogDemo0120/blogdb/django_content_type.frm
+#	new file:   blogDemo0120/blogdb/django_content_type.ibd
+#	new file:   blogDemo0120/blogdb/django_migrations.frm
+#	new file:   blogDemo0120/blogdb/django_migrations.ibd
+#	new file:   blogDemo0120/blogdb/django_session.frm
+#	new file:   blogDemo0120/blogdb/django_session.ibd
+#	renamed:    mysite/mysite/__init__.py -> blogDemo0120/mysite/blog/__init__.py
+#	renamed:    mysite/blog/admin.py -> blogDemo0120/mysite/blog/admin.py
+#	renamed:    mysite/blog/apps.py -> blogDemo0120/mysite/blog/apps.py
+#	renamed:    mysite/blog/migrations/0001_initial.py -> blogDemo0120/mysite/blog/migrations/0001_initial.py
+#	new file:   blogDemo0120/mysite/blog/migrations/0002_auto_20160120_0148.py
+#	renamed:    mysite/blog/migrations/__init__.py -> blogDemo0120/mysite/blog/migrations/__init__.py
+#	renamed:    mysite/blog/models.py -> blogDemo0120/mysite/blog/models.py
+#	renamed:    mysite/blog/templates/archive.html -> blogDemo0120/mysite/blog/templates/archive.html
+#	new file:   blogDemo0120/mysite/blog/templates/base.html
+#	new file:   blogDemo0120/mysite/blog/templates/base2.html
+#	new file:   blogDemo0120/mysite/blog/templates/index.html
+#	new file:   blogDemo0120/mysite/blog/templates/login.html
+#	new file:   blogDemo0120/mysite/blog/templates/regist.html
+#	renamed:    mysite/blog/tests.py -> blogDemo0120/mysite/blog/tests.py
+#	renamed:    mysite/blog/urls.py -> blogDemo0120/mysite/blog/urls.py
+#	new file:   blogDemo0120/mysite/blog/views.py
+#	renamed:    mysite/manage.py -> blogDemo0120/mysite/manage.py
+#	renamed:    mysite/blog/__init__.py -> blogDemo0120/mysite/mysite/__init__.py
+#	renamed:    mysite/mysite/settings.py -> blogDemo0120/mysite/mysite/settings.py
+#	renamed:    mysite/mysite/urls.py -> blogDemo0120/mysite/mysite/urls.py
+#	renamed:    mysite/mysite/wsgi.py -> blogDemo0120/mysite/mysite/wsgi.py
+#	deleted:    mysite/db.sqlite3
+#
+
+0120MySQL
